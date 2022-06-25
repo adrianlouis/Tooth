@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projetos.css">
+    <script src="projetos.js"></script>
+    <script src="https://kit.fontawesome.com/e12642acd8.js" crossorigin="anonymous"></script>
+
+    <title>Thot</title>
+</head>
+
+<body onload="load_leads()">
+
+    <header>
+        <div class="header_icones">
+
+            <div class="perfil">
+                <img src="img/rosto.jpg" alt="Perfil">
+                <span class="nome_perfil">Thot</span>
+            </div>
+
+            <div class="icones_perfil">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="header_abas">
+            <div class="header_abas_span header_abas_escolhido">
+                <span onclick="header_abas(this); load_leads()">LEADS</span>
+            </div>
+
+            <div class="header_abas_span">
+                <span onclick="header_abas(this)">PROJETOS</span>
+            </div>
+
+            <div class="header_abas_span">
+                <span onclick="header_abas(this)">PESSOAS</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        
+        <span style="display: none;" class="span_leads_seguido"><i class="fa-solid fa-thumbtack"></i>Leads acompanhados</span>
+
+        <div style="display: none;" class="leads_acompanhado">
+
+            <div class="container_cards_seguidos"></div>
+
+        </div>
+
+        <div class="leads_cards"></div>
+
+    </main>
+
+</body>
+
+</html>
